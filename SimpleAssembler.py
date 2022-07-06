@@ -1,3 +1,5 @@
+from sys import stdin
+
 def opcode_to_binary(opcode, typ):
     dict_opcode = {'add':'10000', 'sub': '10001', 'ld': '10100', 'st': '10101',
          'mul':'10110', 'div':'10111', 'rs':'11000', 'ls':'11001', 'xor':'11010',
@@ -114,10 +116,8 @@ output=''
 def main():
     global output
     try:
-        l = []
-        f = open("sample2.txt")
-        s = f.readlines()
-        for line in s:
+        l = []  
+        for line in stdin:
             items = line.rstrip('\r\n').split('\t') 
             items = [item.strip() for item in items]  
             items = items[0].split()
