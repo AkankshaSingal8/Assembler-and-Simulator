@@ -176,15 +176,15 @@ def main():
     global output
     try:
 
-        '''l = [['add','R1','R2','R3'], ['addf','R1','R2','R3'],['subf','R1','R2','R3'],['label:']] 
+        #l = [['add','R1','R2','R3'], ['addf','R1','R2','R3'],['subf','R1','R2','R3'],['label:']] 
         l=[]
         for line in stdin:
             items = line.rstrip('\r\n').split('\t') 
             items = [item.strip() for item in items]  
             items = items[0].split()
             if items!=[]:
-                l.append(items)'''
-        l=[]
+                l.append(items)
+        '''l=[]
         f = open('sample.txt','r')
         for line in f.readlines():
             items = line.rstrip('\r\n').split('\t') 
@@ -192,7 +192,7 @@ def main():
             items = items[0].split()
             if items!=[]:
                 l.append(items)
-        f.close()
+        f.close()'''
         
         #[label: label2: add R0 R1 R3]
         label_d={}
